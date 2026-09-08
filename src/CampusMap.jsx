@@ -59,7 +59,7 @@ export default function CampusMap() {
             <div className="corner" style={{ bottom: -3, left: -3 }} />
             <div className="corner" style={{ bottom: -3, right: -3 }} />
 
-            <MapContainer center={campusCenter} zoom={17} style={{ height: '500px', width: '100%' }}>
+<MapContainer center={campusCenter} zoom={16} style={{ height: '70vh', width: '100%' }}>
               <TileLayer
                 url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
                 attribution='Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics'

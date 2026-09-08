@@ -85,9 +85,9 @@ function App() {
   if (!user) return <Auth />
 
   return (
-    <div style={{ display: 'flex' }}>
+    <div style={{ display: 'flex', flexWrap: 'wrap' }}>
       <Sidebar />
-      <div style={{ flex: 1, padding: '24px' }}>
+      <div className="main-content" style={{ flex: 1, padding: '24px', minWidth: 0 }}>
         <Routes>
           <Route path="/profile" element={<ProfilePage />} />
           <Route path="/admin" element={<AdminPage />} />
